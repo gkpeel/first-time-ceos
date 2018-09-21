@@ -1,0 +1,109 @@
+/* ==== VARIABLES ==== */
+.white {
+  color: #ffffff; }
+
+.gray {
+  color: #eee; }
+
+.italics {
+  font-style: italic; }
+
+.thin {
+  font-weight: 300; }
+
+/* ==== JUMBOTRON ==== */
+.summit-jumbotron {
+  background: linear-gradient(#609ddb, #609ddb), url("../images/summit-header-image.jpg");
+  background-blend-mode: color;
+  color: #e3e3e3; }
+  .summit-jumbotron a {
+    color: #e3e3e3;
+    transition: all 0.2s ease-in-out; }
+    .summit-jumbotron a:hover {
+      color: rgba(227, 227, 227, 0.85); }
+  .summit-jumbotron h1 a {
+    color: #ffffff; }
+    .summit-jumbotron h1 a:hover {
+      color: rgba(255, 255, 255, 0.85); }
+
+.header-container {
+  background-color: rgba(10, 10, 20, 0.55);
+  padding: 2.5em;
+  border-radius: 10px;
+  border: 4px #ffffff solid;
+  box-shadow: 0px 8px 16px -4px #000; }
+
+.summit-logo {
+  background-color: #ffffff;
+  display: inline;
+  max-height: 250px; }
+
+#join-us {
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1.35em;
+  font-weight: 700;
+  letter-spacing: 2px; }
+
+/* ==== BODY ==== */
+.intro-text {
+  font-size: 1.25em;
+  line-height: 1.6;
+  font-weight: 500;
+  background-color: #eee;
+  padding: 3.5em;
+  box-shadow: 0px 8px 16px -4px #888;
+  border-radius: 10px;
+  border: 4px #bbb solid; }
+  .intro-text p:last-of-type {
+    margin-bottom: 0; }
+
+.card-body {
+  padding: 1.75rem; }
+
+.testimonial-img-container {
+  flex: 1 1 25%; }
+  .testimonial-img-container img {
+    display: block;
+    margin: auto;
+    max-height: 200px;
+    border-radius: 50%; }
+
+.testimonial-quote {
+  flex: 1 1 75%; }
+
+.pricing-card {
+  margin-bottom: 56px; }
+  .pricing-card .card-header {
+    background-color: #609ddb;
+    color: #ffffff;
+    font-size: 1.75rem; }
+
+.table {
+  text-align: left !important;
+  margin: 1rem 0;
+  padding: 1rem; }
+  .table tr:last-of-type {
+    border-bottom: 1px solid #dee2e6; }
+  .table td {
+    padding: 1.25rem; }
+
+/* ==== FOOTER ==== */
+.summit-footer {
+  background-color: #609ddb;
+  color: #ffffff;
+  padding: 1em 0; }
+  .summit-footer p, .summit-footer ul {
+    margin-bottom: 0; }
+  .summit-footer ul {
+    list-style: none;
+    float: right; }
+  .summit-footer p {
+    float: left; }
+  .summit-footer li {
+    float: left;
+    padding-right: 40px; }
+  .summit-footer li:last-of-type {
+    padding-right: 0px; }
+
+/*# sourceMappingURL=style.css.map */
