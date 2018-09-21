@@ -1,10 +1,50 @@
+
 /* ==== VARIABLES ==== */
 $color-primary: #609ddb;
 $color-white: #ffffff;
 $color-gray-light: #eee;
 $color-gray-med: #bbb;
 
+$device-sm: '(min-width: 576px)';
+$device-md: '(min-width: 768px)';
+$device-lg: '(min-width: 992px)';
+$device-xl: '(min-width: 1200px)';
+$device-xxl: '(min-width: 1422px)';
+
+
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+
+h1 {
+    font-size: 1.75rem ;
+}
+h2 {
+    font-size: 1.35rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+@media #{$device-md} {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+@media #{$device-xl} {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+}
 
 .white {
     color: $color-white;
@@ -22,9 +62,14 @@ $color-gray-med: #bbb;
     font-weight: 300;
 }
 
+span.wrap {
+    white-space: nowrap;
+}
+
 
 /* ==== JUMBOTRON ==== */
 .summit-jumbotron {
+
     background: 
         linear-gradient(
             rgba($color-primary, 0.8),
@@ -32,6 +77,7 @@ $color-gray-med: #bbb;
         ),
         url('../images/summit-header-image.jpg');
     background-blend-mode: color;
+    background-size: cover;
     color: #e3e3e3;
     a {
         color: #e3e3e3;
@@ -87,17 +133,27 @@ $color-gray-med: #bbb;
     line-height: 1.6;
     font-weight: 500;
     background-color: $color-gray-light;
-    padding: 3.5em;
+    padding: 1.5em;
     box-shadow: 0px 8px 16px -4px #888;
     border-radius: 10px;
     border: 4px $color-gray-med solid;
     p:last-of-type {
         margin-bottom: 0;
     }
+    @media #{$device-md} {
+        padding: 3.5em;
+    }
+    @media #{$device-sm} {
+        padding: 2em;
+    }
 }
 
 .card-body {
+    flex-direction: column;
     padding: 1.75rem;
+    @media #{$device-md} {
+        flex-direction: row;
+    }
 }
 
 .testimonial-img-container {
@@ -127,7 +183,10 @@ $color-gray-med: #bbb;
     right: 5px;
     bottom: 5px;
     border: 5px solid $color-white;
-    border-radius: 50%
+    border-radius: 50%;
+    @media #{$device-md} {
+        position: absolute;
+    }
   }
 
 .circle-border {
@@ -144,17 +203,23 @@ $color-gray-med: #bbb;
     border-radius: 50%;
     width: 240px;
     height: 240px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 45px;
-    right: 45px;
+    position: relative;
     box-shadow: 0px 8px 16px -4px #888;
     transition: all 0.2s ease-in-out;
     &:hover {
         background-color: #5A78B6;
         transform: rotate(-2.5deg);
+        text-decoration: none;
+        color: $color-white;
+    }
+    @media #{$device-md} {
+        position: absolute;
+        top: 45px;
+        right: 45px;
     }
 }
 
@@ -165,6 +230,10 @@ $color-gray-med: #bbb;
     transform: rotate(10deg);
     font-weight: bold;
     transition: all 0.2s ease-in-out;
+    &:hover {
+        text-decoration: none;
+        color: $color-white;
+    }
 }
 
 .pricing-card {
@@ -219,13 +288,22 @@ $color-gray-med: #bbb;
         float: right;
     }
     p {
-        float: left;
+        float: right;
     }
     li {
-        float: left;
-        padding-right: 40px;
+        float: right;
+        padding-right: 0px;
     }
     li:last-of-type {
         padding-right: 0px;
+    }
+    @media #{$device-sm} {
+        p {
+            float: left;
+        }
+        li {
+            float: left;
+            padding-right: 40px;
+        }
     }
 }
