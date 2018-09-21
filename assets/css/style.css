@@ -160,6 +160,8 @@
   background-color: #609ddb;
   color: #ffffff;
   padding: 1em 0; }
+  .summit-footer a {
+    color: #ffffff; }
   .summit-footer p, .summit-footer ul {
     margin-bottom: 0; }
   .summit-footer ul {

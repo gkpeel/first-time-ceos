@@ -205,6 +205,9 @@ $color-gray-med: #bbb;
 
 /* ==== FOOTER ==== */
 .summit-footer {
+    a {
+        color: $color-white;
+    }
     background-color: $color-primary;
     color: $color-white;
     padding: 1em 0;
