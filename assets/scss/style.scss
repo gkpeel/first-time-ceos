@@ -1,0 +1,151 @@
+/* ==== VARIABLES ==== */
+$color-primary: #609ddb;
+$color-white: #ffffff;
+$color-gray-light: #eee;
+$color-gray-med: #bbb;
+
+
+
+.white {
+    color: $color-white;
+}
+
+.gray {
+    color: $color-gray-light;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+
+/* ==== JUMBOTRON ==== */
+.summit-jumbotron {
+    background: 
+        linear-gradient(
+            rgba($color-primary, 1),
+            rgba($color-primary, 1)
+        ),
+        url('../images/summit-header-image.jpg');
+    background-blend-mode: color;
+    color: #e3e3e3;
+    a {
+        color: #e3e3e3;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: rgba(#e3e3e3, 0.85);
+        }
+    }
+    h1 a {
+        color: $color-white;
+        &:hover{
+            color: rgba($color-white, 0.85);
+        }
+    }
+}
+
+.header-container {
+    background-color: rgba(10, 10, 20, 0.55);
+    padding: 2.5em;
+    border-radius: 10px;
+    border: 4px $color-white solid;
+    box-shadow: 0px 8px 16px -4px #000;
+}
+
+.summit-logo {
+    background-color: $color-white;
+    display: inline;
+    max-height: 250px;
+}
+
+#join-us {
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.35em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* ==== BODY ==== */
+.intro-text {
+    font-size: 1.25em;
+    line-height: 1.6;
+    font-weight: 500;
+    background-color: $color-gray-light;
+    padding: 3.5em;
+    box-shadow: 0px 8px 16px -4px #888;
+    border-radius: 10px;
+    border: 4px $color-gray-med solid;
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.card-body {
+    padding: 1.75rem;
+}
+
+.testimonial-img-container {
+    flex: 1 1 25%;
+    img {
+        display: block;
+        margin: auto;
+        max-height: 200px;
+        border-radius: 50%;
+    }
+}
+
+.testimonial-quote {
+    flex: 1 1 75%;
+}
+
+.pricing-card {
+    margin-bottom: 56px;
+    .card-header {
+        background-color: $color-primary;
+        color: $color-white;
+        font-size: 1.75rem;
+    }
+}
+
+
+.table {
+    text-align: left !important;
+    margin: 1rem 0;
+    padding: 1rem;
+    tr:last-of-type {
+        border-bottom: 1px solid #dee2e6;
+    }
+    td {
+        padding: 1.25rem;
+    }
+}
+
+
+/* ==== FOOTER ==== */
+.summit-footer {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 1em 0;
+    p, ul {
+        margin-bottom: 0;
+    }
+    ul {
+        list-style: none;
+        float: right;
+    }
+    p {
+        float: left;
+    }
+    li {
+        float: left;
+        padding-right: 40px;
+    }
+    li:last-of-type {
+        padding-right: 0px;
+    }
+}
